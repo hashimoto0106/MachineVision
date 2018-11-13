@@ -1,0 +1,65 @@
+
+■認識・判別
+
+penCVとVisual C++による画像処理と認識
+http://ishidate.my.coocan.jp/opencv_12/opencv_12.htm
+
+テンプレートマッチング
+http://opencv.jp/sample/matching.html
+
+OpenCV（テンプレートマッチング）その2
+https://www.youtube.com/watch?v=xbvQ2Z2OeRU
+
+テンプレートマッチングの比較
+http://d.hatena.ne.jp/ninoseki/20090212/1234444320
+
+OpenCV のテンプレートマッチを使って駒を検出
+http://www.moonmile.net/blog/archives/2468
+
+OpenCVで複数種類の画像を適当な回数、適当な範囲、適当な精度でテンプレートマッチング
+http://ikarino99.hatenablog.com/entry/2014/11/19/174448
+
+https://www.google.co.jp/search?lr=lang_ja&hl=ja&biw=1166&bih=960&tbs=lr%3Alang_1ja&ei=AtfqW7qYIMjXhwPW85ugDA&q=opencv+%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%83%9E%E3%83%83%E3%83%81%E3%83%B3%E3%82%B0+c&oq=opencv+%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%83%9E%E3%83%83%E3%83%81%E3%83%B3%E3%82%B0+c&gs_l=psy-ab.3..0j0i8i30k1l3j0i30k1.11302.14556.0.15484.6.5.1.0.0.0.142.539.3j2.5.0....0...1c.1j4.64.psy-ab..0.5.450...0i67k1j35i39k1.0.Dn5YO54WJUo
+
+■キーボードクラス
+■マウスクラス
+
+■ウィンドウ位置変更
+https://qiita.com/Kazuhito/items/b2ebd9f9010f1ffcac5b
+
+cv2.imshow('window name', frame)
+
+# Window位置の変更　第1引数：Windowの名前　第2引数：x 第3引数：y
+cv2.moveWindow('window name', 100, 200)
+
+
+http://oz-log.blogspot.com/2010/05/opencvimshowwindow.html
+cvMoveWindow（Window名、ｘ、ｙ）
+
+
+
+■複数の画像を1つのウィンドウに表示させる
+同一フレーム上に配置描画
+https://dixq.net/forum/viewtopic.php?t=15618
+https://teratail.com/questions/82294
+http://yamatyuu.net/computer/program/vc2013/opencv/dualview/index.html
+
+
+■to_stringを使ってint型からstring型に変換
+https://www.google.co.jp/search?lr=lang_ja&hl=ja&tbs=lr%3Alang_1ja&ei=5NPiW77iB8eJ8wWpgYHQCw&q=c%2B%2B+string+%E6%95%B0%E5%80%A4%E3%80%80%E5%A4%89%E6%8F%9B&oq=c%2B%2B+string+%E6%95%B0%E5%80%A4%E3%80%80%E5%A4%89%E6%8F%9B&gs_l=psy-ab.3..0j0i7i30k1j0i30k1j0i8i30k1l2j0i5i30k1.5183403.5204351.0.5204631.62.40.18.0.0.0.194.3914.15j20.36.0....0...1.1j4.64.psy-ab..12.47.3214.6..0i4k1j0i131k1j35i39k1j0i131i67k1j0i67k1j0i4i30k1j33i160k1j0i8i4i30k1j0i5i4i30k1.95.XNLNwFlKrAM
+#include <stdio.h>
+#include <string>
+ 
+int main() {
+    std::string str;
+    int num = 4321;
+ 
+    str = std::to_string(num);
+ 
+    printf("数値：%s\n", str.c_str());
+ 
+    return 0;
+}
+
+
+
